@@ -410,7 +410,7 @@
                         onclick="toggleReadMore()">Read More</button>
                 </div>
                 <div class="col-lg-5">
-                    <img src="https://avantirealtech.com/images/about1.jpg" alt="{{ getSettings()->app_name }} Image"
+                    <img src="{{ public_asset('assets/front/images/about1.jpg') }}" alt="{{ getSettings()->app_name }} Image"
                         class="img-fluid thumbnail-contact">
                 </div>
             </div>

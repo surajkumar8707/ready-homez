@@ -1,91 +1,64 @@
 @extends('layouts.app')
-@section('title', getSettings()->app_name.':: About Page')
+@section('title', getSettings()->app_name . ':: Home Page')
 @section('content')
-    <div class="back_re">
+
+    <div class="hero-wrap" style="background-image: url({{ public_asset('assets/front/images/bg_1.jpg') }});">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-9 ftco-animate text-center fadeInUp ftco-animated">
+                    <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>About</span></p> -->
+                    <h1 class="mb-3 bread">About</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section" id="">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h2>About Us</h2>
-                    </div>
+                <div class="col-lg-7">
+                    <p class="sectionTag text-big" style="text-decoration: underline;">About {{ getSettings()->app_name }}
+                    </p>
+                    <p class="sectionSubTag text-small">
+                        At Ready Homez, we redefine the real estate experience with a strong focus on client satisfaction
+                        and customized services. Based in the vibrant city of Gurgaon/Gurugram, we provide a comprehensive
+                        range of real estate solutions to cater to our clients' diverse needs. Whether you're looking for
+                        commercial spaces such as retail outlets, office environments, or residential properties from
+                        luxurious condominiums to budget-friendly homes, we’ve got you covered.
+                        <br><br>
+                        <span id="more-text" style="display: none;">
+                            Our expertise extends to leasing, asset management, and strategic real estate consulting,
+                            offering full-cycle support to guide you through the complexities of the property market. By
+                            understanding your unique requirements—whether it’s location, accessibility, investment value,
+                            or developer reputation—we create tailored solutions that align perfectly with your long-term
+                            vision. At Ready Homez, we ensure that every real estate decision you make is informed,
+                            strategic, and future-focused.
+                        </span>
+                    </p>
+                    <button id="read-more-btn" class="btn btn-primary" style="margin-bottom: 20px;"
+                        onclick="toggleReadMore()">Read More</button>
+                </div>
+                <div class="col-lg-5">
+                    <img src="{{ public_asset('assets/front/images/about1.jpg') }}"
+                        alt="{{ getSettings()->app_name }} Image" class="img-fluid thumbnail-contact">
                 </div>
             </div>
         </div>
-    </div>
-    <!-- about -->
-    <div class="about">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="titlepage">
+    </section>
 
-                        <h2>Welcome to Guest House</h2>
-                        <p>At Guest House, we pride ourselves on offering exceptional hospitality and comfort in a serene
-                            and welcoming environment. Located in the heart of [Your City/Region], our hotel combines luxury
-                            with a home-like atmosphere to provide an unforgettable stay for both business and leisure
-                            travelers.</p>
+    <script>
+        function toggleReadMore() {
+            var moreText = document.getElementById("more-text");
+            var btnText = document.getElementById("read-more-btn");
 
-                        <h3>Our Mission</h3>
-                        <p>Our mission is to deliver personalized service and create memorable experiences for our guests.
-                            Whether you're here for a short stay or an extended visit, our dedicated team is committed to
-                            ensuring your needs are met with professionalism and warmth.</p>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="about_img">
-                        <figure><img src="{{ public_asset('assets/front/images/pages/about.jpg') }}" alt="#" />
-                        </figure>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <main>
-                    <section>
-                        {{-- <h2>Welcome to Guest House</h2>
-                        <p>At Guest House, we pride ourselves on offering exceptional hospitality and comfort in a serene and
-                            welcoming environment. Located in the heart of [Your City/Region], our hotel combines luxury with a
-                            home-like atmosphere to provide an unforgettable stay for both business and leisure travelers.</p>
-
-                        <h3>Our Mission</h3>
-                        <p>Our mission is to deliver personalized service and create memorable experiences for our guests.
-                            Whether you're here for a short stay or an extended visit, our dedicated team is committed to
-                            ensuring your needs are met with professionalism and warmth.</p> --}}
-
-                        <h2>What We Offer</h2>
-                        <ul>
-                            <li><strong>Comfortable Rooms:</strong> Enjoy our elegantly furnished rooms designed for
-                                relaxation
-                                and convenience. Each room is equipped with modern amenities to make your stay enjoyable.
-                            </li>
-                            <li><strong>Stunning Gallery:</strong> Explore our curated gallery that showcases local art and
-                                culture, adding a touch of creativity to your visit.</li>
-                            <li><strong>Exceptional Service:</strong> From the moment you arrive until your departure, our
-                                staff
-                                is here to assist you with a smile and make sure you have everything you need.</li>
-                            <li><strong>Prime Location:</strong> Located near key attractions, business centers, and dining
-                                options, Guest House is the perfect base for exploring [Your City/Region].</li>
-                        </ul>
-
-                        <h3>Our Values</h3>
-                        <ul>
-                            <li><strong>Hospitality:</strong> We believe in making every guest feel at home with genuine,
-                                attentive service.</li>
-                            <li><strong>Integrity:</strong> We operate with transparency and honesty in all our dealings.
-                            </li>
-                            <li><strong>Excellence:</strong> We strive for the highest standards in everything we do, from
-                                our
-                                facilities to our service.</li>
-                        </ul>
-
-                        <p>Thank you for choosing Guest House. We look forward to welcoming you and making your stay
-                            extraordinary.</p>
-                    </section>
-                </main>
-            </div>
-
-
-        </div>
-    </div>
-    <!-- end about -->
+            if (moreText.style.display === "none") {
+                moreText.style.display = "inline";
+                btnText.innerHTML = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                btnText.innerHTML = "Read More";
+            }
+        }
+    </script>
 @endsection

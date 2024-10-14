@@ -1,65 +1,50 @@
 @extends('layouts.app')
-@section('title', getSettings()->app_name.':: Privacy Policy')
+@section('title', getSettings()->app_name . ':: Privacy Policy')
 @section('content')
-    <div class="back_re">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h2>Privacy Policy</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Privacy Policy -->
+    <div class="container">
+        <section id="privacy-policy">
+            <h1>Privacy Policy</h1>
+            <p>Welcome to Ready Homez! We value your privacy and are committed to protecting your personal information. This
+                Privacy Policy outlines how we collect, use, and safeguard your data when you visit our website or use our
+                services.</p>
+
+            <h2>1. Information We Collect</h2>
+            <ul>
+                <li><strong>Personal Information:</strong> We may collect your name, email address, phone number, and other
+                    relevant details when you fill out forms, book a room, or contact us for inquiries.</li>
+                <li><strong>Usage Data:</strong> We may also collect information on how you interact with our website, such
+                    as IP address, browser type, and pages visited.</li>
+            </ul>
+
+            <h2>2. How We Use Your Information</h2>
+            <ul>
+                <li>To provide, operate, and maintain our services.</li>
+                <li>To communicate with you regarding your bookings, inquiries, or requests.</li>
+                <li>To improve our website, services, and user experience.</li>
+                <li>To send promotional emails about new services, special offers, or other information that we think you
+                    may find interesting.</li>
+            </ul>
+
+            <h2>3. Sharing of Information</h2>
+            <p>We do not share, sell, rent, or trade your personal information with third parties without your consent,
+                except as necessary to fulfill a service you have requested or as required by law.</p>
+
+            <h2>4. Security</h2>
+            <p>We are committed to ensuring that your information is secure. We implement suitable physical, electronic, and
+                managerial procedures to safeguard the information we collect online.</p>
+
+            <h2>5. Your Rights</h2>
+            <p>You may request details of the personal information we hold about you under data protection laws. You also
+                have the right to request that we correct or delete any information you find inaccurate or incomplete.</p>
+
+            <h2>6. Changes to This Policy</h2>
+            <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page, and we encourage
+                you to review it periodically.</p>
+
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at <a
+                    href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+        </section>
     </div>
-    <!-- our_room -->
-    <div class="our_room">
-        <div class="container">
-            <h2>Introduction</h2>
-            <p>Guest House is committed to protecting your privacy and ensuring a safe online experience. This Privacy
-                Policy outlines how we collect, use, and safeguard your information.</p>
-
-            <h2>Information We Collect</h2>
-            <ol>
-                <li><strong>Personal Information:</strong> We may collect personal information such as your name, email
-                    address, phone number, and payment details when you make a reservation or interact with our website.
-                </li>
-                <li><strong>Usage Data:</strong> We may collect information about your use of our website, including IP
-                    address, browser type, and pages visited, to improve our services and user experience.</li>
-            </ol>
-
-            <h2>How We Use Your Information</h2>
-            <ol>
-                <li><strong>Booking and Service:</strong> We use your personal information to process bookings, provide
-                    customer support, and enhance your experience at Guest House.</li>
-                <li><strong>Marketing:</strong> With your consent, we may use your information to send you promotional
-                    materials, newsletters, and offers related to our services. You can opt out of receiving these
-                    communications at any time.</li>
-                <li><strong>Improvement:</strong> We use usage data to analyze and improve our website and services.</li>
-            </ol>
-
-            <h2>Data Sharing and Security</h2>
-            <ol>
-                <li><strong>Third Parties:</strong> We do not sell or rent your personal information to third parties. We
-                    may share your information with service providers who assist us in operating our business and providing
-                    services to you, under strict confidentiality agreements.</li>
-                <li><strong>Security Measures:</strong> We implement appropriate security measures to protect your personal
-                    information from unauthorized access, alteration, or disclosure.</li>
-            </ol>
-
-            <h2>Your Rights</h2>
-            <ol>
-                <li><strong>Access and Correction:</strong> You have the right to access and correct your personal
-                    information. If you wish to update or delete your information, please contact us.</li>
-                <li><strong>Complaints:</strong> If you have any concerns about how your information is handled, please
-                    contact us. You also have the right to lodge a complaint with the relevant data protection authority.
-                </li>
-            </ol>
-
-            <h2>Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. Any changes will be posted on our website, and we
-                encourage you to review this policy periodically.</p>
-        </div>
-    </div>
-    <!-- end our_room -->
 @endsection

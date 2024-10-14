@@ -1,64 +1,49 @@
 @extends('layouts.app')
-@section('title', getSettings()->app_name.':: Terma and Conditions')
+@section('title', getSettings()->app_name . ':: Terma and Conditions')
 @section('content')
-    <div class="back_re">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h2>Terms &amp; Condition</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Terms & Conditions -->
+    <div class="container">
+        <section id="terms-and-conditions">
+            <h1>Terms & Conditions</h1>
+            <p>Welcome to Ready Homez! By using our website and services, you agree to the following terms and conditions.
+                Please read them carefully.</p>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using our website, you agree to be bound by these terms and any other policies we post. If
+                you do not agree, please do not use our services.</p>
+
+            <h2>2. Use of the Website</h2>
+            <p>You agree to use the website for lawful purposes only. You may not use the site in any way that could harm
+                the website, its content, or other users.</p>
+
+            <h2>3. Booking Terms</h2>
+            <ul>
+                <li><strong>Booking Confirmation:</strong> When you make a booking, you agree to provide accurate and
+                    complete information. Bookings are subject to availability, and we reserve the right to cancel any
+                    booking if incorrect information is provided.</li>
+                <li><strong>Payment:</strong> Payment must be made according to the rates listed on our website. We accept
+                    various payment methods as specified during the booking process.</li>
+            </ul>
+
+            <h2>4. Intellectual Property</h2>
+            <p>All content, design, and materials on the website are owned by Ready Homez and are protected by copyright and
+                trademark laws. You may not reproduce, distribute, or create derivative works without our permission.</p>
+
+            <h2>5. Limitation of Liability</h2>
+            <p>Ready Homez will not be held liable for any damages, losses, or claims arising from the use of our website or
+                services. We do not guarantee that the website will be free from errors, interruptions, or viruses.</p>
+
+            <h2>6. Governing Law</h2>
+            <p>These terms and conditions are governed by the laws of Himachal. Any disputes arising from the use of this
+                website shall be resolved by the courts.</p>
+
+            <h2>7. Changes to Terms</h2>
+            <p>We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting,
+                and your continued use of the website signifies acceptance of the new terms.</p>
+
+            <h2>8. Contact Us</h2>
+            <p>For questions about these Terms & Conditions, please contact us at <a
+                    href="mailto:{{ getSettings()->email }}">{{ getSettings()->email }}</a>.</p>
+        </section>
     </div>
-    <!-- our_room -->
-    <div class="our_room">
-        <div class="container">
-            <h2>Introduction</h2>
-            <p>These Terms and Conditions govern your use of our services at Guest House. By making a reservation or using
-                our website, you agree to abide by these terms.</p>
-
-            <h2>Booking and Reservations</h2>
-            <ol>
-                <li><strong>Booking Confirmation:</strong> All bookings are subject to availability and confirmation by
-                    Guest House. A reservation is confirmed when you receive a confirmation email.</li>
-                <li><strong>Payment:</strong> Payment details will be required to secure your booking. Full payment or a
-                    deposit may be required depending on the room type and booking conditions.</li>
-                <li><strong>Cancellation Policy:</strong> Cancellations must be made according to our cancellation policy. A
-                    cancellation fee may apply depending on the timing of the cancellation and the rate plan booked.</li>
-            </ol>
-
-            <h2>Check-In and Check-Out</h2>
-            <ol>
-                <li><strong>Check-In Time:</strong> Check-in is typically from [Check-In Time]. Early check-in may be
-                    available upon request and subject to availability.</li>
-                <li><strong>Check-Out Time:</strong> Check-out is usually by [Check-Out Time]. Late check-out may incur
-                    additional charges and is subject to availability.</li>
-            </ol>
-
-            <h2>Use of Facilities</h2>
-            <ol>
-                <li><strong>Guest Conduct:</strong> Guests are expected to conduct themselves in a manner respectful to
-                    other guests and staff. We reserve the right to refuse service or remove guests from the property who
-                    violate this policy.</li>
-                <li><strong>Damage and Loss:</strong> Guests are responsible for any damage or loss to the property or its
-                    contents caused during their stay. Charges may apply for repairs or replacements.</li>
-            </ol>
-
-            <h2>Liability</h2>
-            <ol>
-                <li><strong>Limitation of Liability:</strong> Guest House is not liable for any loss, damage, or injury
-                    arising from the use of our facilities or services, except as required by law.</li>
-                <li><strong>Force Majeure:</strong> We are not liable for failure to perform any of our obligations due to
-                    circumstances beyond our control, including but not limited to natural disasters, strikes, or government
-                    actions.</li>
-            </ol>
-
-            <h2>Amendments</h2>
-            <p>We reserve the right to amend these Terms and Conditions at any time. Any changes will be communicated
-                through our website or directly to guests as appropriate.</p>
-        </div>
-    </div>
-    <!-- end our_room -->
 @endsection
