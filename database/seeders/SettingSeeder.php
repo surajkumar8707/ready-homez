@@ -21,8 +21,8 @@ class SettingSeeder extends Seeder
             'app_name' => 'Ready Homez',
             'email' => 'info.readyhomez@gmail.com',
             'whatsapp' => '9650425860',
-            'contact' => '8307554262',
-            'address' => 'Gour city centre moll 1st floor office no ff 201-H',
+            'contact' => '9873882054',
+            'address' => 'Gaur City centre office no FF-201-H',
             'header_image' => "assets/front/images/rh_logo.png",
             'is_fresh' => 1,
         ]);

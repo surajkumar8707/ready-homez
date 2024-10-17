@@ -67,7 +67,8 @@
         </div>
 
         <div class="col-md-6 d-flex">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.4388960939127!2d77.04064397494841!3d28.40601069433233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d230012fecaa9%3A0x683ad2c50f86ff52!2sAvanti%20Homez!5e0!3m2!1sen!2sin!4v1727426402811!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.4388960939127!2d77.04064397494841!3d28.40601069433233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d230012fecaa9%3A0x683ad2c50f86ff52!2sAvanti%20Homez!5e0!3m2!1sen!2sin!4v1727426402811!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3502.791328076782!2d77.42625227549988!3d28.60603627567925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM2JzIxLjciTiA3N8KwMjUnNDMuOCJF!5e0!3m2!1sen!2sin!4v1729194154496!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>

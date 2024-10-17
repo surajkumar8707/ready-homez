@@ -63,7 +63,7 @@
                     <a class="nav-link" href="{{ url('about') }}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="{{ route('front.gallery') }}">Gallery</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('contact-us') }}">Contact</a>

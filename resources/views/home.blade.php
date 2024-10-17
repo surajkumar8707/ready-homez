@@ -384,6 +384,55 @@
 
 
 
+    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_1.jpg);">
+        <div class="container">
+            <div class="row justify-content-center mb-3 pb-3">
+                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate fadeInUp ftco-animated">
+                    <h2 class="mb-4">All clients are very happy with my work</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <strong class="number" data-number="350">350 +</strong>
+                                    <span>Interior site complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <strong class="number" data-number="150">150</strong>
+                                    <span>Construction site complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <strong class="number" data-number="7000">7,000</strong>
+                                    <span>Flates and kothi rent out</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <strong class="number" data-number="150">150</strong>
+                                    <span>Flates and kothi sell out</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="section" id="">
         <div class="container">
             <div class="row">
