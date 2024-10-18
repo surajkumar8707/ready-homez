@@ -449,7 +449,7 @@
                                         <i class="fas fa-couch fa-2x text-white"></i>
                                     </div>
                                     <strong class="number" data-number="350">350 +</strong>
-                                    <span>Interior site complete</span>
+                                    <span style="font-size: 18px;font-weight : bold">Interior site complete</span>
                                 </div>
                             </div>
                         </div>
@@ -460,7 +460,7 @@
                                         <i class="fas fa-hammer fa-2x text-white"></i>
                                     </div>
                                     <strong class="number" data-number="150">150</strong>
-                                    <span>Construction site complete</span>
+                                    <span style="font-size: 18px;font-weight : bold">Construction site complete</span>
                                 </div>
                             </div>
                         </div>
@@ -471,7 +471,7 @@
                                         <i class="fas fa-building fa-2x text-white"></i>
                                     </div>
                                     <strong class="number" data-number="7000">7,000</strong>
-                                    <span>Flats and kothi rent out</span>
+                                    <span style="font-size: 18px;font-weight : bold">Flats and kothi rent out</span>
                                 </div>
                             </div>
                         </div>
@@ -482,7 +482,7 @@
                                         <i class="fas fa-home fa-2x text-white"></i>
                                     </div>
                                     <strong class="number" data-number="150">150</strong>
-                                    <span>Flats and kothi sell out</span>
+                                    <span style="font-size: 18px;font-weight : bold">Flats and kothi sell out</span>
                                 </div>
                             </div>
                         </div>
