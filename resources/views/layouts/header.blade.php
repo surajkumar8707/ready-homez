@@ -5,7 +5,7 @@
                 <div class="row justify-content-end">
                     <div class="col-auto d-flex align-items-center">
                         <p class="num"></span><a
-                                href="tel:=91{{ getSettings()->contact }}">{{ getSettings()->contact }}</a></p>
+                                href="tel:=919650425860">9650425860</a></p>
                     </div>
                     <div class="col-auto d-flex align-items-center">
                         <p class="num"><span class="icon-mail"></span><a
@@ -41,11 +41,20 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('') }}">Home</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('construction') }}">Construction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('interior') }}">Interior</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('rent-property') }}">Rent and Property</a>
+                </li>
 
 
 
                 <!-- Portfolio dropdown -->
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Services
@@ -56,7 +65,7 @@
                         <a class="dropdown-item" href="{{ url('rent-property') }}">Rent and Property</a>
                         <!-- <a class="dropdown-item" href="#">Resale</a> -->
                     </div>
-                </li>
+                </li> --}}
 
                 <!-- Other Nav items -->
                 <li class="nav-item">
