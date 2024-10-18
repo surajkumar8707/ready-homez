@@ -48,12 +48,12 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Portfolio
+                        Services
                     </a>
                     <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                        <a class="dropdown-item" href="#">Residential</a>
-                        <a class="dropdown-item" href="#">Plots</a>
-                        <a class="dropdown-item" href="#">Properties for Rent</a>
+                        <a class="dropdown-item" href="{{ url('construction') }}">Construction</a>
+                        <a class="dropdown-item" href="{{ url('interior') }}">Interior</a>
+                        <a class="dropdown-item" href="{{ url('rent-property') }}">Rent and Property</a>
                         <!-- <a class="dropdown-item" href="#">Resale</a> -->
                     </div>
                 </li>

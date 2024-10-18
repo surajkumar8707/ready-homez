@@ -1,3 +1,76 @@
+<section>
+    <div class="reviews mt-5">
+        <div class="container">
+            {{-- <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>What Our Guests Say</h2>
+                    </div>
+                </div>
+            </div> --}}
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <span class="subheading"></span>
+                    <h2 class="mb-4">Rate & Review</h2>
+                </div>
+            </div>
+            <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#reviewCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#reviewCarousel" data-slide-to="1" class=""></li>
+                    <li data-target="#reviewCarousel" data-slide-to="2" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 text-center">
+                                <div class="review_text">
+                                    <img src="https://guest-house.greenhomecity.com/public/assets/front/images/avator.png" alt="John Doe" class="avatar-img rounded-circle mb-3" style="width: 80px; height: 80px;">
+                                    <p>"Had a wonderful stay! The rooms were clean and the staff was very friendly. Will definitely come back!"</p>
+                                    <h5>- John Doe</h5>
+                                    <span>★★★★★</span> <!-- Rating out of 5 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 text-center">
+                                <div class="review_text">
+                                    <img src="https://guest-house.greenhomecity.com/public/assets/front/images/avator.png" alt="Jane Smith" class="avatar-img rounded-circle mb-3" style="width: 80px; height: 80px;">
+                                    <p>"Amazing location and peaceful atmosphere. Perfect for a getaway."</p>
+                                    <h5>- Jane Smith</h5>
+                                    <span>★★★★☆</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 text-center">
+                                <div class="review_text">
+                                    <img src="https://guest-house.greenhomecity.com/public/assets/front/images/avator.png" alt="Michael Brown" class="avatar-img rounded-circle mb-3" style="width: 80px; height: 80px;">
+                                    <p>"Beautiful scenery, excellent service, and great food. Highly recommend!"</p>
+                                    <h5>- Michael Brown</h5>
+                                    <span>★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#reviewCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#reviewCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- -----social icons-------- -->
 <div class="sticky-container">
     <ul class="sticky-social-icons">

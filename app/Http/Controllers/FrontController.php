@@ -63,6 +63,18 @@ class FrontController extends Controller
     {
         return view('gallery');
     }
+    public function construction()
+    {
+        return view('construction');
+    }
+    public function interior()
+    {
+        return view('interior');
+    }
+    public function rentProperty()
+    {
+        return view('rent_property');
+    }
     public function blog()
     {
         return view('blog');
