@@ -18,20 +18,20 @@ class SocialMediaLinkSeeder extends Seeder
 
         // Seed new data with default URLs
         SocialMediaLink::create([
-            'youTube' => 'https://www.youtube.com/',
+            'youTube' => 'https://youtube.com/@readyhomez?si=fM4dnLloTB8UHc5Z',
             'youTube_show' => true,
 
-            'instagram' => 'https://www.instagram.com/',
+            'instagram' => 'https://www.instagram.com/ready_homez_?igsh=MWY3bmlzbHpsOWhvbw==&utm_source=ig_contact_invite',
             'instagram_show' => true,
 
-            'facebook' => 'https://www.facebook.com/',
+            'facebook' => 'https://www.facebook.com/share/c6fdtLJrNcK9AGQc/',
             'facebook_show' => true,
 
             'linkedin' => 'https://www.linkedin.com/',
-            'linkedin_show' => true,
+            'linkedin_show' => false,
 
             'twitter' => 'https://twitter.com/',
-            'twitter_show' => true,
+            'twitter_show' => false,
         ]);
     }
 }

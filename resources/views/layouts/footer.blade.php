@@ -25,8 +25,11 @@
                         <div class="row justify-content-center">
                             <div class="col-md-8 text-center">
                                 <div class="review_text">
-                                    <img src="https://guest-house.greenhomecity.com/public/assets/front/images/avator.png" alt="John Doe" class="avatar-img rounded-circle mb-3" style="width: 80px; height: 80px;">
-                                    <p>"Had a wonderful stay! The rooms were clean and the staff was very friendly. Will definitely come back!"</p>
+                                    <img src="https://guest-house.greenhomecity.com/public/assets/front/images/avator.png"
+                                        alt="John Doe" class="avatar-img rounded-circle mb-3"
+                                        style="width: 80px; height: 80px;">
+                                    <p>"Had a wonderful stay! The rooms were clean and the staff was very friendly. Will
+                                        definitely come back!"</p>
                                     <h5>- John Doe</h5>
                                     <span>★★★★★</span> <!-- Rating out of 5 -->
                                 </div>
@@ -37,7 +40,9 @@
                         <div class="row justify-content-center">
                             <div class="col-md-8 text-center">
                                 <div class="review_text">
-                                    <img src="https://guest-house.greenhomecity.com/public/assets/front/images/avator.png" alt="Jane Smith" class="avatar-img rounded-circle mb-3" style="width: 80px; height: 80px;">
+                                    <img src="https://guest-house.greenhomecity.com/public/assets/front/images/avator.png"
+                                        alt="Jane Smith" class="avatar-img rounded-circle mb-3"
+                                        style="width: 80px; height: 80px;">
                                     <p>"Amazing location and peaceful atmosphere. Perfect for a getaway."</p>
                                     <h5>- Jane Smith</h5>
                                     <span>★★★★☆</span>
@@ -49,7 +54,9 @@
                         <div class="row justify-content-center">
                             <div class="col-md-8 text-center">
                                 <div class="review_text">
-                                    <img src="https://guest-house.greenhomecity.com/public/assets/front/images/avator.png" alt="Michael Brown" class="avatar-img rounded-circle mb-3" style="width: 80px; height: 80px;">
+                                    <img src="https://guest-house.greenhomecity.com/public/assets/front/images/avator.png"
+                                        alt="Michael Brown" class="avatar-img rounded-circle mb-3"
+                                        style="width: 80px; height: 80px;">
                                     <p>"Beautiful scenery, excellent service, and great food. Highly recommend!"</p>
                                     <h5>- Michael Brown</h5>
                                     <span>★★★★★</span>
@@ -74,31 +81,49 @@
 <!-- -----social icons-------- -->
 <div class="sticky-container">
     <ul class="sticky-social-icons">
-        <li>
-            <img alt="twitter" src="https://avantirealtech.com/images/icon/ftr_scl2.png" width="32" height="32">
-            <p><a href="javascript:;" target="_blank">Follow Us on<br>X</a></p>
-        </li>
-        <li>
-            <img alt="Linkedin" src="https://avantirealtech.com/images/icon/ftr_scl6.png" width="32" height="32">
-            <p><a href="javascript:;" target="_blank">Subscribe
-                    on<br>LinkedIn</a></p>
-        </li>
-        <li>
-            <img alt="Instagram" src="https://avantirealtech.com/images/icon/ftr_scl5.png" width="32"
-                height="32">
-            <p><a href="javascript:;" target="_blank">Follow Us on<br>Instagram</a></p>
-        </li>
+        @if ($socialMedia->youTube_show)
+            <li>
+                <img alt="Youtube" src="https://avantirealtech.com/images/icon/ftr_scl1.png" width="32"
+                    height="32">
+                <p><a href="{{ $socialMedia->youTube }}" target="_blank">Like Us
+                        on<br>Youtube</a></p>
+            </li>
+        @endif
+        @if ($socialMedia->instagram_show)
+            <li>
+                <img alt="Instagram" src="https://avantirealtech.com/images/icon/ftr_scl5.png" width="32"
+                    height="32">
+                <p><a href="{{ $socialMedia->instagram }}"
+                        target="_blank">Follow Us on<br>Instagram</a></p>
+            </li>
+        @endif
+        @if ($socialMedia->facebook_show)
+            <li>
+                <img alt="Facebook"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png"
+                    width="32" height="32">
+                <p><a href="{{ $socialMedia->facebook }}" target="_blank">View Us on<br>Facebook</a>
+                </p>
+            </li>
+        @endif
+        @if ($socialMedia->linkedin_show)
+            <li>
+                <img alt="Linkedin" src="https://avantirealtech.com/images/icon/ftr_scl6.png" width="32"
+                    height="32">
+                <p><a href="{{ $socialMedia->linkedin }}" target="_blank">Subscribe
+                        on<br>LinkedIn</a></p>
+            </li>
+        @endif
+        @if ($socialMedia->twitter_show)
+            <li>
+                <img alt="twitter" src="https://avantirealtech.com/images/icon/ftr_scl2.png" width="32"
+                    height="32">
+                <p><a href="{{ $socialMedia->twitter }}" target="_blank">Follow Us on<br>X</a></p>
+            </li>
+        @endif
 
-        <li>
-            <img alt="Facebook" src="https://avantirealtech.com/images/icon/ftr_scl1.png" width="32" height="32">
-            <p><a href="javascript:;" target="_blank">Like Us
-                    on<br>Youtube</a></p>
-        </li>
-        <li>
-            <img alt="Pinterest" src="https://avantirealtech.com/images/icon/ftr_scl3.png" width="32"
-                height="32">
-            <p><a href="javascript:;" target="_blank">View Us on<br>Pinterest</a></p>
-        </li>
+
+
 
     </ul>
 </div>
@@ -322,7 +347,7 @@
         $('.intercomCloseBtn.active').addClass('intercom').removeClass('intercomCloseBtn');
         $('.intercom.active').html(
             '<img class="img-responsive" src="https://avantirealtech.com/user/images/icon/close.png" alt="intercom-icon">'
-            );
+        );
         $('.intercom').attr('onclick', 'showIcons();');
     }
 </script>
