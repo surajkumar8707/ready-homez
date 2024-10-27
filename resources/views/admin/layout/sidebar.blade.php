@@ -63,7 +63,7 @@
             </a>
         </li>
 
-        <li class="menu-item {{ isActiveRoute(['admin.bookings']) }}">
+        {{-- <li class="menu-item {{ isActiveRoute(['admin.bookings']) }}">
             <a href="{{ route('admin.bookings') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-calendar"></i>
                 <div data-i18n="Bookings">Bookings</div>
@@ -76,7 +76,7 @@
                 <i class='menu-icon tf-icons bx bxs-carousel'></i>
                 <div data-i18n="Analytics">Home Page Carousel</div>
             </a>
-        </li>
+        </li> --}}
 
         <li class="menu-item {{ isActiveRoute(['admin.contacts']) }}">
             <a href="{{ route('admin.contacts') }}" class="menu-link">
@@ -111,17 +111,17 @@
             <ul class="menu-sub">
                 <li class="menu-item">
                     <a href="{{ route('admin.pages.about') }}" class="menu-link">
-                        <div class="text-truncate" data-i18n="Account">About Page</div>
+                        <div class="text-truncate" data-i18n="Account">Construction</div>
                     </a>
                 </li>
                 <li class="menu-item">
                     <a href="pages-account-settings-notifications.html" class="menu-link">
-                        <div class="text-truncate" data-i18n="Notifications">Notifications</div>
+                        <div class="text-truncate" data-i18n="Notifications">Interior</div>
                     </a>
                 </li>
                 <li class="menu-item">
                     <a href="pages-account-settings-connections.html" class="menu-link">
-                        <div class="text-truncate" data-i18n="Connections">Connections</div>
+                        <div class="text-truncate" data-i18n="Connections">Rent and Property</div>
                     </a>
                 </li>
             </ul>
