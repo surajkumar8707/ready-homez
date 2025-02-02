@@ -68,7 +68,7 @@
                 <i class="menu-icon tf-icons bx bx-calendar"></i>
                 <div data-i18n="Bookings">Bookings</div>
             </a>
-        </li>
+        </li> --}}
 
         <li
             class="menu-item {{ isActiveRoute(['admin.home-page-carousel.index', 'admin.home-page-carousel.create', 'admin.home-page-carousel.edit']) }}">
@@ -76,7 +76,7 @@
                 <i class='menu-icon tf-icons bx bxs-carousel'></i>
                 <div data-i18n="Analytics">Home Page Carousel</div>
             </a>
-        </li> --}}
+        </li>
 
         <li class="menu-item {{ isActiveRoute(['admin.contacts']) }}">
             <a href="{{ route('admin.contacts') }}" class="menu-link">
@@ -101,9 +101,9 @@
 
         <!-- App Pages -->
         <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Profile, Security &amp; Pages</span>
+            <span class="menu-header-text">Profile, Security</span>
         </li>
-        <li class="menu-item">
+        {{-- <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div class="text-truncate" data-i18n="Pages">Pages</div>
@@ -125,7 +125,7 @@
                     </a>
                 </li>
             </ul>
-        </li>
+        </li> --}}
         {{-- <li class="menu-item">
             <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
                 target="_blank" class="menu-link">

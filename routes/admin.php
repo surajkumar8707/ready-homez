@@ -46,6 +46,6 @@ Route::middleware('role:admin')->group(function () {
         Route::get('/gallery', [AdminController::class, 'galleryPage'])->name('gallery');
     });
 
-    // Route::resource('home-page-carousel', HomePageCarouselController::class);
+    Route::resource('home-page-carousel', HomePageCarouselController::class);
     Route::post('/change-status', [HomePageCarouselController::class, 'changeStatus'])->name('change.status');
 });

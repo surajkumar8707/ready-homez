@@ -2,29 +2,32 @@
 @section('title', getSettings()->app_name . ':: Home Page')
 @section('content')
     <section class="home-slider owl-carousel">
-        <div class="slider-item" style="position: relative;">
-            <!-- Video background -->
-            <div class="video-container">
-                <video class="slider-item" autoplay muted loop id="background-video" style="width:100%; height:auto;">
-                    <source src="https://avantirealtech.com/images/bg.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        @forelse (getAllSlider(1) as $slider)
+        {{-- @dd($slider); --}}
+            <div class="slider-item" style="position: relative;">
+                <!-- Video background -->
+                <div class="video-container">
+                    {{-- <video class="slider-item" autoplay muted loop id="background-video" style="width:100%; height:auto;">
+                        <source src="https://avantirealtech.com/images/bg.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video> --}}
+                    <img src="{{ public_asset($slider->image) }}" alt="">
+                </div>
 
-            <!-- Text overlay -->
-            <div class="overlay-text"
-                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center; font-family: 'Playfair Display', serif; /* Font for the heading */
+                <!-- Text overlay -->
+                <div class="overlay-text"
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center; font-family: 'Playfair Display', serif; /* Font for the heading */
             font-size: 6em;
             font-weight: 700;">
-                <span style="color: #eab000">{{ getSettings()->app_name }}</span><br>
-                <div class="subheading" style="font-size: 30px;">
-                    Welcome to {{ getSettings()->app_name }} – Your Dream Home Awaits!<br>
-                    Your Dream Home, Just a Click Away
+                    <span style="color: #eab000">{{ getSettings()->app_name }}</span><br>
+                    <div class="subheading" style="font-size: 30px;">
+                        Welcome to {{ getSettings()->app_name }} – Your Dream Home Awaits!<br>
+                        Your Dream Home, Just a Click Away
+                    </div>
                 </div>
             </div>
-        </div>
-
-
+        @empty
+        @endforelse
     </section>
 
     <section class="ftco-bar">
@@ -141,13 +144,13 @@
                             </div>
                         </div>
                         <!-- <div class="item">
-                   <div class="builders" style="width: 178.333px; margin-right: 20px;">
-                    <div class="item client-slide">
-                     <a href="#" target="_blank"> <img src="https://avantirealtech.com/images/builders/9.jpg" alt="Top Real Estate Builders" title="Ireo"
-                       style="max-width:100%"></a>
-                    </div>
-                   </div>
-                  </div> -->
+                       <div class="builders" style="width: 178.333px; margin-right: 20px;">
+                        <div class="item client-slide">
+                         <a href="#" target="_blank"> <img src="https://avantirealtech.com/images/builders/9.jpg" alt="Top Real Estate Builders" title="Ireo"
+                           style="max-width:100%"></a>
+                        </div>
+                       </div>
+                      </div> -->
                         <div class="item">
                             <div class="builders" style="width: 178.333px; margin-right: 20px;">
                                 <div class="item client-slide">
@@ -435,14 +438,16 @@
     <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_1.jpg);">
         <div class="container">
             <div class="row justify-content-center mb-3 pb-3">
-                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate fadeInUp ftco-animated">
+                <div
+                    class="col-md-7 text-center heading-section heading-section-white ftco-animate fadeInUp ftco-animated">
                     <h2 class="mb-4">All clients are very happy with my work</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div class="row">
-                        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+                        <div
+                            class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
                             <div class="block-18 text-center">
                                 <div class="text">
                                     <div class="icon mb-3">
@@ -453,7 +458,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+                        <div
+                            class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
                             <div class="block-18 text-center">
                                 <div class="text">
                                     <div class="icon mb-3">
@@ -464,7 +470,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+                        <div
+                            class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
                             <div class="block-18 text-center">
                                 <div class="text">
                                     <div class="icon mb-3">
@@ -475,7 +482,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+                        <div
+                            class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
                             <div class="block-18 text-center">
                                 <div class="text">
                                     <div class="icon mb-3">
@@ -520,8 +528,8 @@
                         onclick="toggleReadMore()">Read More</button>
                 </div>
                 <div class="col-lg-5">
-                    <img src="{{ public_asset('assets/front/images/about1.jpg') }}" alt="{{ getSettings()->app_name }} Image"
-                        class="img-fluid thumbnail-contact">
+                    <img src="{{ public_asset('assets/front/images/about1.jpg') }}"
+                        alt="{{ getSettings()->app_name }} Image" class="img-fluid thumbnail-contact">
                 </div>
             </div>
         </div>
@@ -779,7 +787,8 @@
                         data-aos-delay="100">
                         <div class="featured-item">
                             <div class="item-img">
-                                <img class="img-fluid" src="{{ public_asset('assets/front/images/construction/' . $i . '.jpg') }}"
+                                <img class="img-fluid"
+                                    src="{{ public_asset('assets/front/images/construction/' . $i . '.jpg') }}"
                                     class="img-fluid" alt="">
                             </div>
                         </div>
